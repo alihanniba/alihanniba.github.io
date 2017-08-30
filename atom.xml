@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>花一个无所</title>
+  <subtitle>Alihanniba</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-08-30T06:55:38.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Alihanniba</name>
+    <email>alihanniba@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://yoursite.com/2017/08/30/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2017/08/30/第一篇文章/</id>
+    <published>2017-08-30T06:54:12.000Z</published>
+    <updated>2017-08-30T06:55:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="SSH免密码登陆服务器"><a href="#SSH免密码登陆服务器" class="headerlink" title="SSH免密码登陆服务器"></a>SSH免密码登陆服务器</h3><p><img src="https://share.alihanniba.com/mac/2017-08-11-024936.jpg" alt=""></p>
+<blockquote>
+<p>题图：Pixabay</p>
+</blockquote>
+<h4 id="1-下载SSH"><a href="#1-下载SSH" class="headerlink" title="1.下载SSH"></a>1.下载SSH</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//mac</div><div class="line">brew install ssh</div><div class="line">//ubuntu</div><div class="line">apt-get install ssh</div><div class="line">//centos</div><div class="line">yun install ssh</div></pre></td></tr></table></figure>
+<h4 id="2-生成SSH密匙与公匙"><a href="#2-生成SSH密匙与公匙" class="headerlink" title="2.生成SSH密匙与公匙"></a>2.生成SSH密匙与公匙</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa</div></pre></td></tr></table></figure>
+<p><img src="https://share.alihanniba.com/mac/2017-08-11-025126.jpg" alt=""><br>默认全部回车，之后进入默认文件夹，默认生成的是密匙id_rsa、公匙id_rsa.pub。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd ~/.ssh &amp;&amp; ls</div></pre></td></tr></table></figure>
+<p><img src="https://share.alihanniba.com/mac/2017-08-11-025153.jpg" alt=""></p>
+<h4 id="3-将公匙上传至服务器"><a href="#3-将公匙上传至服务器" class="headerlink" title="3.将公匙上传至服务器"></a>3.将公匙上传至服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-copy-id root@alihanniba.com</div></pre></td></tr></table></figure>
+<p>此处我的已经上传过了。上传过程中需要输入服务器密码<br><img src="https://share.alihanniba.com/mac/2017-08-11-025221.jpg" alt=""><br>当服务器没有.ssh文件时，需先新建一个</p>
+<h4 id="4-设置SSH登陆别名"><a href="#4-设置SSH登陆别名" class="headerlink" title="4.设置SSH登陆别名"></a>4.设置SSH登陆别名</h4><p>打开SSH配置文件，没有就新建一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim ~/.ssh/config</div></pre></td></tr></table></figure>
+<p>输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Host alihanniba.com				# 自定义别名</div><div class="line">  HostName alihanniba.com		# ssh服务器ip或domain</div><div class="line">  Port 22							# ssh服务器端口，默认为22</div><div class="line">  User root							# ssh服务器用户名</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa			# 公钥文件对应的私钥文件</div></pre></td></tr></table></figure>
+<h4 id="5-快捷登陆"><a href="#5-快捷登陆" class="headerlink" title="5.快捷登陆"></a>5.快捷登陆</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh alihanniba.com</div></pre></td></tr></table></figure>
+<p><img src="https://share.alihanniba.com/mac/2017-08-11-025249.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;SSH免密码登陆服务器&quot;&gt;&lt;a href=&quot;#SSH免密码登陆服务器&quot; class=&quot;headerlink&quot; title=&quot;SSH免密码登陆服务器&quot;&gt;&lt;/a&gt;SSH免密码登陆服务器&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://share.alihanniba
+    
+    </summary>
+    
+    
+      <category term="ssh" scheme="http://yoursite.com/tags/ssh/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/08/30/hello-world/"/>
+    <id>http://yoursite.com/2017/08/30/hello-world/</id>
+    <published>2017-08-30T06:17:36.000Z</published>
+    <updated>2017-08-30T06:17:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
