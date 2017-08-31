@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-31T08:52:03.000Z</updated>
+  <updated>2017-08-31T09:39:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/08/30/SSH%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E9%99%86%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://yoursite.com/2017/08/30/SSH免密码登陆服务器/</id>
     <published>2017-08-30T06:54:12.000Z</published>
-    <updated>2017-08-31T08:52:03.000Z</updated>
+    <updated>2017-08-31T09:39:58.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://share.alihanniba.com/mac/2017-08-11-024936.jpg" alt=""></p>
 <blockquote>
@@ -50,6 +50,8 @@
 &lt;h4 id=&quot;1-下载SSH&quot;&gt;&lt;a href=&quot;#1-下载SSH&quot; class=&quot;headerlink&quot; title=&quot;1.下载SSH&quot;&gt;&lt;/a&gt;1.下载SSH&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;//mac&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;brew install ssh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;//ubuntu&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;apt-get install ssh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;//centos&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;yun install ssh&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
+      <category term="服务器" scheme="http://yoursite.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
       <category term="ssh" scheme="http://yoursite.com/tags/ssh/"/>
