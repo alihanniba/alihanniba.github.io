@@ -48,7 +48,7 @@
 		  <h1 class="header-author"><a href="/">Alihanniba</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">Alihanniba</p>
+		<p class="header-subtitle">⚡ GO TO BE A FULL STACK ⭐  🔑 GO TO BE AN ARCHITECT 👍</p>
 		
 
 		<nav class="header-menu">
@@ -106,7 +106,7 @@
 			  <h1 class="header-author js-header-author">Alihanniba</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Alihanniba<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>⚡ GO TO BE A FULL STACK ⭐  🔑 GO TO BE AN ARCHITECT 👍<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -171,18 +171,9 @@
 <p>题图：Pixabay</p>
 </blockquote>
 <h4 id="1-下载SSH"><a href="#1-下载SSH" class="headerlink" title="1.下载SSH"></a>1.下载SSH</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//mac</div><div class="line">brew install ssh</div><div class="line">//ubuntu</div><div class="line">apt-get install ssh</div><div class="line">//centos</div><div class="line">yun install ssh</div></pre></td></tr></table></figure>
-<h4 id="2-生成SSH密匙与公匙"><a href="#2-生成SSH密匙与公匙" class="headerlink" title="2.生成SSH密匙与公匙"></a>2.生成SSH密匙与公匙</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa</div></pre></td></tr></table></figure>
-<p><img src="https://share.alihanniba.com/mac/2017-08-11-025126.jpg" alt=""><br>默认全部回车，之后进入默认文件夹，默认生成的是密匙id_rsa、公匙id_rsa.pub。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd ~/.ssh &amp;&amp; ls</div></pre></td></tr></table></figure>
-<p><img src="https://share.alihanniba.com/mac/2017-08-11-025153.jpg" alt=""></p>
-<h4 id="3-将公匙上传至服务器"><a href="#3-将公匙上传至服务器" class="headerlink" title="3.将公匙上传至服务器"></a>3.将公匙上传至服务器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-copy-id root@alihanniba.com</div></pre></td></tr></table></figure>
-<p>此处我的已经上传过了。上传过程中需要输入服务器密码<br><img src="https://share.alihanniba.com/mac/2017-08-11-025221.jpg" alt=""><br>当服务器没有.ssh文件时，需先新建一个</p>
-<h4 id="4-设置SSH登陆别名"><a href="#4-设置SSH登陆别名" class="headerlink" title="4.设置SSH登陆别名"></a>4.设置SSH登陆别名</h4><p>打开SSH配置文件，没有就新建一个</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim ~/.ssh/config</div></pre></td></tr></table></figure>
-<p>输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Host alihanniba.com				# 自定义别名</div><div class="line">  HostName alihanniba.com		# ssh服务器ip或domain</div><div class="line">  Port 22							# ssh服务器端口，默认为22</div><div class="line">  User root							# ssh服务器用户名</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa			# 公钥文件对应的私钥文件</div></pre></td></tr></table></figure>
-<h4 id="5-快捷登陆"><a href="#5-快捷登陆" class="headerlink" title="5.快捷登陆"></a>5.快捷登陆</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh alihanniba.com</div></pre></td></tr></table></figure>
-<p><img src="https://share.alihanniba.com/mac/2017-08-11-025249.jpg" alt=""></p>
+        
+          <a class="article-more-a" href="/2017/08/30/SSH免密码登陆服务器/#more">more >></a>
+        
       
 
       
